@@ -16,3 +16,13 @@
           Not sure
         </label>
       </div>
+
+
+  console.log(a);
+  if (a >= 3) {
+   $('#javascript-win').show();
+  }else if (b>= 3) {
+    $('#ruby-win').show();
+  }else (c>=3) {
+    $('#python-win').show();
+  }
