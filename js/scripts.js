@@ -1,5 +1,6 @@
 
 function check(){
+
   var a=0;
   var q1=document.quiz.question1.value;
   var q2=document.quiz.question2.value;
@@ -27,7 +28,7 @@ function check(){
   if (q4=="ruby") {b++}
   if (q5=="ruby") {b++}
   if (q6=="ruby") {b++}
-
+//var result=document.getElementById("result");
   var c=0;
   var q1=document.quiz.question1.value;
   var q2=document.quiz.question2.value;
@@ -42,8 +43,13 @@ function check(){
   if (q5=="python") {c++}
   if (q6=="python") {c++}
 
-
-
-  document.write("Javascript Score = "+ a + "Ruby Score = "+ b + "Python Score = "+ c);
+  if (a >= 3) {
+    $('#javascript-win').show();
+    }else if (b >= 3) {
+      $('#ruby-win').show();
+    }else {
+      $('#python-win').show();
+    }
+  
   
 };

@@ -3,6 +3,16 @@
   text-align: left;
   float: left;
 }
+#javascript-win, #ruby-win, #python-win {
+  display: none;
+}
+#javascript-win {
+  text-align: left;
+  text-shadow: 2px 2px lightgrey;
+}
+.jss_text {
+  text-shadow: 0;
+}
 body {
   background-color: lightblue;
   text-align: center;
@@ -11,4 +21,5 @@ h1 {
   color: white;
   margin: 2px;
   padding: 5px;
+  text-shadow: 2px 2px black;
 }
