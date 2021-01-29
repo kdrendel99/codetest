@@ -1,0 +1,18 @@
+<h2>What type of Web Dev are you interested in?</h2>
+        <div class="Javascript">
+          <label>
+            <input type="radio" name="language" value="ska" checked>
+          Front end
+          </label>
+        </div>
+      <div class="Ruby">
+        <label>
+          <input type="radio" name="language" value="back-end">
+          Back end
+        </label>
+      <div class="Python">
+        <label>
+          <input type="radio" name="language" value="python">
+          Not sure
+        </label>
+      </div>

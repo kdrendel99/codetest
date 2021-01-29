@@ -1,0 +1,14 @@
+.text {
+  color: black;
+  text-align: left;
+  float: left;
+}
+body {
+  background-color: lightblue;
+  text-align: center;
+}
+h1 {
+  color: white;
+  margin: 2px;
+  padding: 5px;
+}
