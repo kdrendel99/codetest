@@ -2,19 +2,27 @@
   color: black;
   text-align: left;
   float: left;
+  margin: 15px;
 }
 #javascript-win, #ruby-win, #python-win {
   display: none;
 }
-#javascript-win {
+#javascript-win, #ruby-win, #python-win {
   text-align: left;
   text-shadow: 2px 2px lightgrey;
 }
-.jss_text {
-  text-shadow: 0;
+#javascript-win {
+  background-color: lightskyblue;
 }
+#ruby-win{
+  background-color: #8CF691;
+}
+#python-win {
+  background-color: #FEF38B; 
+  text-shadow: 4px;
+}
+
 body {
-  background-color: lightblue;
   text-align: center;
 }
 h1 {
