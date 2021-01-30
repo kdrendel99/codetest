@@ -41,6 +41,7 @@ function check(){
   if (q5=="python") {c++}
   if (q6=="python") {c++}
 
+  if (a+b+c>5){
   if (a >= 3) {
     $('#javascript-win').show();
     }else if (b >= 3) {
@@ -48,6 +49,7 @@ function check(){
     }else {
       $('#python-win').show();
     }
+  }
 $('#show_hide').on('click', function(){
     $('.container').toggle();
   });

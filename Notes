@@ -51,7 +51,19 @@ html::::::: <p id="result"></p>
   </div>
 </div>
 
+$(".clickable").click(function() {
+    $("#javascript-win").toggle();
+    $("#javascript-win").toggle();
+  });
 
+
+$('#show_hide2').on('click', function(){
+    $('#ruby-win').toggle();
+  });
+
+$('#show_hide3').on('click', function(){
+    $('#python-win').toggle();
+  });
 //result.textContent="Javascript Score = "+ a + "Ruby Score = "+ b + "Python Score = "+ c}
 
 //document.write("Javascript Score = "+ a + "Ruby Score = "+ b + "Python Score = "+ c);

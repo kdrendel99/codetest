@@ -21,7 +21,9 @@
   background-color: #FEF38B; 
   text-shadow: 4px;
 }
-
+#show_hide{
+  float: right;
+}
 body {
   text-align: center;
 }
