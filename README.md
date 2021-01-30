@@ -8,8 +8,8 @@
 
 * _HTML_
 * _CSS_
-*_Javascript_
-*_JQuery_
+*_JAVASCRIPT_
+*_JQUERY_
 
 
 ## Description
