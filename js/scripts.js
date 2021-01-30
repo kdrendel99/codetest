@@ -1,3 +1,5 @@
+var result = "";
+
 function check(){
   var a=0;
   var q1=document.quiz.question1.value;
@@ -41,17 +43,24 @@ function check(){
   if (q5=="python") {c++}
   if (q6=="python") {c++}
 
-  if (a+b+c>5){
-  if (a >= 3) {
-    $('#javascript-win').show();
-    }else if (b >= 3) {
+  if (a + b + c > 5) {
+    if (a >= 3) {
+      $('#javascript-win').show();
+      result = "#javascript-win";
+    } 
+    else if (b >= 3) {
       $('#ruby-win').show();
-    }else {
+      result = "#ruby-win";
+    }
+    else {
       $('#python-win').show();
+      result = "#python-win";
     }
   }
-$('#show_hide').on('click', function(){
-    $('.container').toggle();
-  });
 
+};
+
+function showHide() {
+  $(result).toggle(); 
+  return false;
 };
