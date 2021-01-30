@@ -1,6 +1,4 @@
-
 function check(){
-
   var a=0;
   var q1=document.quiz.question1.value;
   var q2=document.quiz.question2.value;
@@ -50,6 +48,8 @@ function check(){
     }else {
       $('#python-win').show();
     }
-  
-  
+$('#show_hide').on('click', function(){
+    $('.container').toggle();
+  });
+
 };
