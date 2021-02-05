@@ -1,0 +1,69 @@
+<h2>What type of Web Dev are you interested in?</h2>
+        <div class="Javascript">
+          <label>
+            <input type="radio" name="language" value="ska" checked>
+          Front end
+          </label>
+        </div>
+      <div class="Ruby">
+        <label>
+          <input type="radio" name="language" value="back-end">
+          Back end
+        </label>
+      <div class="Python">
+        <label>
+          <input type="radio" name="language" value="python">
+          Not sure
+        </label>
+      </div>
+html::::::: <p id="result"></p>
+
+  console.log(a);
+  if (a >= 3) {
+   $('#javascript-win').show();
+  }else if (b>= 3) {
+    $('#ruby-win').show();
+  }else (c>=3) {
+    $('#python-win').show();
+  }
+
+    console.log(a,b,c);
+  if (a >= 3) {
+  $('#javascript-win').show();
+  }else if (b>= 3) {
+    $('#ruby-win').show();
+  }else (c>=3) {
+    $('#python-win').show();
+  }
+
+  <div class="container">
+  <div id="javascript-win">
+    <h1>JAVASCRIPT</h1>
+  </div>
+</div>
+
+<div id="ruby-win">
+  <h1>RUBY</h1>
+</div> 
+
+<div id="python-win">
+    <h1>PYTHON</h1>
+  </div>
+</div>
+
+$(".clickable").click(function() {
+    $("#javascript-win").toggle();
+    $("#javascript-win").toggle();
+  });
+
+
+$('#show_hide2').on('click', function(){
+    $('#ruby-win').toggle();
+  });
+
+$('#show_hide3').on('click', function(){
+    $('#python-win').toggle();
+  });
+//result.textContent="Javascript Score = "+ a + "Ruby Score = "+ b + "Python Score = "+ c}
+
+//document.write("Javascript Score = "+ a + "Ruby Score = "+ b + "Python Score = "+ c);

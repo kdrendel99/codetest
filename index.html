@@ -8,67 +8,61 @@
     <script src="js/scripts.js"></script>
     <title>Picking a language</title>
     <style>
-    #grid1{
-    height: cover;
-    background-image: linear-gradient(to bottom, #d6f4ff,#B5EFEE)
-    }
+      #grid1{
+      height: cover;
+      background-image: linear-gradient(to bottom, #d6f4ff,#B5EFEE)
+      }
     </style>
   </head>
   <body>
     <div id="grid1">
       <h1>Picking a coding language</h1>
       <img src="img/language.png" width="600">
-    <div class="text">
-      <p>Picking a coding language to begin with may seem like a daunting task. With so many options available it's difficult to denote where to begin. New languages are being tweaked, reinvented, and published frequently and it's important to be able to stay up-to-date in order to survive as a web developer. Being able to write in different languages is important, but what if you don't know where to start?</p>
-      <p>That's where this website comes in to play. With a simple assessment, You can easily get a pointer and recommendation in the direction that you'd like to take your first steps into a world of coding. Simply take the short test on the right, and we'll let you know what language we'd recommend as a jumping off point.</p>
+      <div class="text">
+        <p>Picking a coding language to begin with may seem like a daunting task. With so many options available it's difficult to denote where to begin. New languages are being tweaked, reinvented, and published frequently and it's important to be able to stay up-to-date in order to survive as a web developer. Being able to write in different languages is important, but what if you don't know where to start?</p>
+        <p>That's where this website comes in to play. With a simple assessment, You can easily get a pointer and recommendation in the direction that you'd like to take your first steps into a world of coding. Simply take the short test on the right, and we'll let you know what language we'd recommend as a jumping off point.</p>
+      </div>
+      <form name="quiz" id="quiz">
+        <div>
+          <h2>1. What type of Web Dev are you interested in?</h2>
+          <p><input type="radio" name="question1" value="javascript"> a. Front end</p>
+          <p><input type="radio" name="question1" value="ruby"> b. Back back-end</p>
+          <p><input type="radio" name="question1" value="python"> c. Not sure</p>
+        </div>
+        <div>
+          <h2>2. Do you enjoy being visually creative or problem solving?</h2>
+          <p><input type="radio" name="question2" value="javascript"> a. Visual creativity!</p>
+          <p><input type="radio" name="question2" value="ruby"> b. Problem solving!</p>
+          <p><input type="radio" name="question2" value="python"> c. I'm equal parts.</p>
+        </div>
+        <div>
+          <h2>3. How much experience with coding do you have?</h2>
+          <p><input type="radio" name="question3" value="javascript"> a. Little</p>
+          <p><input type="radio" name="question3" value="ruby"> b. A bunch!</p>
+          <p><input type="radio" name="question3" value="python"> c. Somewhere in the middle</p>
+        </div>
+        <div>
+          <h2>4. What kind of coding do you want to do?</h2>
+          <p><input type="radio" name="question4" value="javascript"> a. Web Dev</p>
+          <p><input type="radio" name="question4" value="ruby"> b. Data analysis </p>
+          <p><input type="radio" name="question4" value="python"> c. Not sure</p>
+        </div>
+        <div>
+          <h2>5. What's your purpose for coding?</h2>
+          <p><input type="radio" name="question5" value="javascript"> a. Self-taught/experimenting</p>
+          <p><input type="radio" name="question5" value="ruby"> b. Just web dev</p>
+          <p><input type="radio" name="question5" value="python"> c. I want to keep my options open!</p>
+        </div>
+        <div>
+          <h2>6. BONUS What is the airspeed velocity of an unladen swallow?</h2>
+          <p><input type="radio" name="question6" value="javascript"> a. African, or European?</p>
+          <p><input type="radio" name="question6" value="ruby"> b. Run away!</p>
+          <p><input type="radio" name="question6" value="python"> c. Bring out 'cher dead!</p>
+        </div>
+        <input type="button" name="" value="Submit" onclick="check()" 
+      </form>
+      <button class="btn btn-primary" onClick="return showHide()" id="show_hide">Toggle your result</button>
     </div>
-
-    <form name="quiz" id="quiz">
-    <div>
-      <h2>1. What type of Web Dev are you interested in?</h2>
-      <p><input type="radio" name="question1" value="javascript"> a. Front end</p>
-      <p><input type="radio" name="question1" value="ruby"> b. Back back-end</p>
-      <p><input type="radio" name="question1" value="python"> c. Not sure</p>
-    </div>
-
-    <div>
-      <h2>2. Do you enjoy being visually creative or problem solving?</h2>
-      <p><input type="radio" name="question2" value="javascript"> a. Visual creativity!</p>
-      <p><input type="radio" name="question2" value="ruby"> b. Problem solving!</p>
-      <p><input type="radio" name="question2" value="python"> c. I'm equal parts.</p>
-    </div>
-
-    <div>
-      <h2>3. How much experience with coding do you have?</h2>
-      <p><input type="radio" name="question3" value="javascript"> a. Little</p>
-      <p><input type="radio" name="question3" value="ruby"> b. A bunch!</p>
-      <p><input type="radio" name="question3" value="python"> c. Somewhere in the middle</p>
-    </div>
-
-    <div>
-      <h2>4. What kind of coding do you want to do?</h2>
-      <p><input type="radio" name="question4" value="javascript"> a. Web Dev</p>
-      <p><input type="radio" name="question4" value="ruby"> b. Data analysis </p>
-      <p><input type="radio" name="question4" value="python"> c. Not sure</p>
-    </div>
-
-    <div>
-      <h2>5. What's your purpose for coding?</h2>
-      <p><input type="radio" name="question5" value="javascript"> a. Self-taught/experimenting</p>
-      <p><input type="radio" name="question5" value="ruby"> b. Just web dev</p>
-      <p><input type="radio" name="question5" value="python"> c. I want to keep my options open!</p>
-    </div>
-
-    <div>
-      <h2>6. BONUS What is the airspeed velocity of an unladen swallow?</h2>
-      <p><input type="radio" name="question6" value="javascript"> a. African, or European?</p>
-      <p><input type="radio" name="question6" value="ruby"> b. Run away!</p>
-      <p><input type="radio" name="question6" value="python"> c. Bring out 'cher dead!</p>
-    </div>
-    <input type="button" name="" value="Submit" onclick="check()" 
-    </form>
-    <button class="btn btn-primary" onClick="return showHide()" id="show_hide">Toggle your result</button>
-  </div>
     <div class="container">
       <div id="javascript-win">
         <h1>You got Javascript!</h1>
@@ -76,23 +70,19 @@
         <p>Javascript is the world's most popular programming language. It's used to program the moving parts in a web browser, however has many other uses too. It's used in everything from building simple websites to big-name companies such as Microsoft, Netflix, and Paypal. Javascript is a great first language to learn and will help you get your foot in the door as well as help you get familiar with learning coding logic.</p>
         <p><a href="https://www.javascript.com/learn/strings">Click here</a> to learn more about Javascript!</p>
       </div>
-
-
       <div id="ruby-win">
         <h1>You got Ruby!</h1>
         <img src="img/ruby.jpg" width="400">
         <p> Ruby is a nice all-in-one package for webdev. It's great to learn for web specifically, however few people use Ruby by itself anymore. So while one could use Ruby as a python replacement, there's more demand elsewhere. If you're interested in web dev and (em)only(/em) webdev, then Ruby is a really marketable language to know. Many companies will use either Dotnet or Ruby on Rails to build their programs.</p>
         <p><a href="https://www.ruby-lang.org/en/about/">Click here</a> to learn more about Ruby!</p>
-        
-      </div> 
-
+      </div>
       <div id="python-win">
         <h1>You got Python!</h1>
         <img src="img/python.jpg" width="400">
         <p>Python is a language that's similar to Ruby. Python is currently an industry standard for many programs. Looking at python vs Ruby, python is a better choice many aspects. Python is widely used by big name companies such as Google, Facebook, Instagram, and Spotify. According to Wikipedia, "It's an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects."</p>
         <p><a href="https://www.python.org/about/">Click here</a> to learn more about Python!</p>
-        
       </div>
     </div>
   </body>
 </html>
+COPY TO CLIPBOARD SELECT ALL
