@@ -21,7 +21,7 @@ _I've build this site for practice with user input in Javascript. This is the mo
 * _Open terminal_
 * _Create a desired directory to store repo clone using $ mkdir_
 * _Navigate to local directory in terminal and enter $ git clone https://github.com/kdrendel99/codetest.git_
-* _Use the '$ touch index.html' function to select, followed by '$ code .'_
+* _Navigate to the folder and click 'index.html' function to open in local browser._
 
 ## Known Bugs
 
